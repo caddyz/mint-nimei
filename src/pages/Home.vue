@@ -1,13 +1,15 @@
 <template>
   <div class="page-tabbar">
     <div class="page-wrap">
-      <div class="page-title">Tabbar</div>
-      <div>
-        <mt-cell class="page-part" title="当前选中" :value="selected" />
-      </div>
+      <!--<div class="page-title">Tabbar</div>-->
+      <!--<div>-->
+        <!--<mt-cell class="page-part" title="当前选中" :value="selected" />-->
+      <!--</div>-->
       <mt-tab-container class="page-tabbar-container" v-model="selected">
         <mt-tab-container-item id="主页">
-          <Swipper></Swipper>
+          <swipper></swipper>
+          <classification></classification>
+          <!--<index></index>-->
         </mt-tab-container-item>
         <mt-tab-container-item id="分类">
           <mt-cell v-for="n in 5" :key="n" :title="'订单 ' + n"/>
@@ -49,15 +51,17 @@
 
 <script>
 import Swipper from '../components/Swipper'
+import Classification from '../components/Classification'
+// import Index from './Index'
 export default {
-  name: 'page-tabbar',
   data () {
     return {
       selected: '主页'
     }
   },
   components: {
-    Swipper
+    Swipper,
+    Classification
   }
 }
 </script>
@@ -70,6 +74,6 @@ export default {
   .page-wrap {
     overflow: auto;
     height: 100%;
-    /*padding-bottom: 100px;*/
+    padding-bottom: 100px;
   }
 </style>
