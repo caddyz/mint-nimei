@@ -32,7 +32,6 @@
 <script>
 import 'swiper/dist/css/swiper.css'
 import '../assets/styles/reset.css' // 引入默认配置样式文件
-// import '../assets/styles/iconfont.css' // 引入logo图标
 import '../assets/styles/border.css' // 引入1像素边框样式文件
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 

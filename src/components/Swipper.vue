@@ -27,13 +27,14 @@ export default {
     },
     onClickImg () {
       console.log('获取id:' + this.imgList[this.index].id)
+      this.$router.push('/goodDetail')
     }
   }
 }
 </script>
 <style type="less">
       .mint-swipe {
-        height: 200px;
+        height: 220px;
         color: #fff;
         font-size: 30px;
         text-align: center;

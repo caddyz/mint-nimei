@@ -1,79 +1,33 @@
 <template>
-  <div class="page-tabbar">
-    <div class="page-wrap">
-      <!--<div class="page-title">Tabbar</div>-->
-      <!--<div>-->
-        <!--<mt-cell class="page-part" title="当前选中" :value="selected" />-->
-      <!--</div>-->
-      <mt-tab-container class="page-tabbar-container" v-model="selected">
-        <mt-tab-container-item id="主页">
-          <swipper></swipper>
-          <classification></classification>
-          <!--<index></index>-->
-        </mt-tab-container-item>
-        <mt-tab-container-item id="分类">
-          <mt-cell v-for="n in 5" :key="n" :title="'订单 ' + n"/>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="购物车">
-          <mt-cell v-for="n in 7" :key="n" :title="'发现 ' + n"/>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="我的">
-          <div class="page-part">
-            <mt-cell v-for="n in 12" :key="n" :title="'我的 ' + n"/>
-          </div>
-          <router-link to="/">
-            <mt-button type="danger" size="large">退出</mt-button>
-          </router-link>
-        </mt-tab-container-item>
-      </mt-tab-container>
-    </div>
-
-    <mt-tabbar v-model="selected" fixed>
-      <mt-tab-item id="主页">
-        <img slot="icon" src="../assets/100x100.png">
-        外卖
-      </mt-tab-item>
-      <mt-tab-item id="分类">
-        <img slot="icon" src="../assets/100x100.png">
-        订单
-      </mt-tab-item>
-      <mt-tab-item id="购物车">
-        <img slot="icon" src="../assets/100x100.png">
-        发现
-      </mt-tab-item>
-      <mt-tab-item id="我的">
-        <img slot="icon" src="../assets/100x100.png">
-        我的
-      </mt-tab-item>
-    </mt-tabbar>
+  <div>
+    <header-main></header-main>
+    <swipper></swipper>
+    <classification></classification>
+    <seckill></seckill>
+    <good-list></good-list>
   </div>
 </template>
 
 <script>
 import Swipper from '../components/Swipper'
 import Classification from '../components/Classification'
-// import Index from './Index'
+import GoodList from '../components/GoodList'
+import Seckill from '../components/Seckill'
+import HeaderMain from '../components/common/HeaderMain'
 export default {
   data () {
     return {
-      selected: '主页'
     }
   },
   components: {
     Swipper,
-    Classification
+    Classification,
+    GoodList,
+    Seckill,
+    HeaderMain
   }
 }
 </script>
 
-<style type="less">
-  .page-tabbar {
-    overflow: hidden;
-    height: 100vh;
-  }
-  .page-wrap {
-    overflow: auto;
-    height: 100%;
-    padding-bottom: 100px;
-  }
+<style>
 </style>

@@ -27,6 +27,42 @@ const li = [{
   productName: 'test2',
   promotePrice: 120,
   stock: 32
+}, {
+  id: '4',
+  cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558166812270&di=f57cd906bae54e0303fd4119c50d0797&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170220%2F913c3f7541ba4ccfa0240da3fece6bbd_th.jpeg',
+  productName: 'test2',
+  promotePrice: 120,
+  stock: 32
+}, {
+  id: '5',
+  cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558166812270&di=f57cd906bae54e0303fd4119c50d0797&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170220%2F913c3f7541ba4ccfa0240da3fece6bbd_th.jpeg',
+  productName: 'test2',
+  promotePrice: 120,
+  stock: 32
+}, {
+  id: '6',
+  cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558166812270&di=f57cd906bae54e0303fd4119c50d0797&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170220%2F913c3f7541ba4ccfa0240da3fece6bbd_th.jpeg',
+  productName: 'test2',
+  promotePrice: 120,
+  stock: 32
+}, {
+  id: '7',
+  cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558166812270&di=f57cd906bae54e0303fd4119c50d0797&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170220%2F913c3f7541ba4ccfa0240da3fece6bbd_th.jpeg',
+  productName: 'test2',
+  promotePrice: 120,
+  stock: 32
+}, {
+  id: '8',
+  cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558166812270&di=f57cd906bae54e0303fd4119c50d0797&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170220%2F913c3f7541ba4ccfa0240da3fece6bbd_th.jpeg',
+  productName: 'test2',
+  promotePrice: 120,
+  stock: 32
+}, {
+  id: '9',
+  cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558166812270&di=f57cd906bae54e0303fd4119c50d0797&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170220%2F913c3f7541ba4ccfa0240da3fece6bbd_th.jpeg',
+  productName: 'test2',
+  promotePrice: 120,
+  stock: 32
 }]
 export default {
   props: ['card'],
